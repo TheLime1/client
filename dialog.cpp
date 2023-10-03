@@ -12,3 +12,10 @@ Dialog::~Dialog()
 {
     delete ui;
 }
+
+void Dialog::setclient(Client c)
+{
+    ui->lineEdit_cinD->setText(c.get_cin());
+    ui->lineEdit_nomD->setText(c.get_nom());
+    ui->lineEdit_prenomD->setText(c.get_prenom());
+}

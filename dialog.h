@@ -2,6 +2,7 @@
 #define DIALOG_H
 
 #include <QDialog>
+#include "client.h"
 
 namespace Ui {
 class Dialog;
@@ -13,6 +14,7 @@ class Dialog : public QDialog
 
 public:
     explicit Dialog(QWidget *parent = nullptr);
+    void setclient(Client c);
     ~Dialog();
 
 private:
